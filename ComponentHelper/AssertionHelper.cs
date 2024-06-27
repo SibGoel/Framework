@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Framework.ComponentHelper
 {
-    public class BrowserHelper
+    public class AssertionHelper
     {
     }
 }

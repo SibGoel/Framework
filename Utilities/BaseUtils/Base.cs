@@ -41,8 +41,9 @@ namespace Framework.Utilities.BaseUtils
                 test = ReportHelper.CreateTest(TestContext.CurrentContext.Test.Name);
                 SetBrowser();
 
-                ComponentHelper.ActionELiements.NavigateToUrl(driver.Value, AppConfigSettings.AppURL);
-                driver.Value.Manage().Window.Maximize();
+                ComponentHelper.NavigationHelper.NavigateToUrl(driver.Value, AppConfigSettings.AppURL);
+                ComponentHelper.NavigationHelper.MaximizeWindow(driver.Value);
+                //driver.Value.Manage().Window.Maximize();
                 LogHelper.WriteLog(logFilePath, "Successfully started the browser and naviagted to the Application");
             }
             catch

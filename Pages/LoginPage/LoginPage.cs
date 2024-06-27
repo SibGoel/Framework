@@ -1,4 +1,5 @@
 ﻿using AventStack.ExtentReports;
+using Framework.ComponentHelper;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System;
@@ -39,6 +40,7 @@ namespace Framework.Pages.LoginPage
         {
             try
             {
+                WaitHelper.WaitForPageLoad(driver);
                 txtUserName.Clear();
                 txtUserName.SendKeys(username);
                 txtPassword.Clear();

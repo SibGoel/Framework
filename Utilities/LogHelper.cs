@@ -10,7 +10,7 @@ namespace Framework.Utilities
     public class LogHelper
     {
         private static readonly string logDirectory = Directory.GetParent(System.Environment.CurrentDirectory)?.Parent?.Parent?.FullName + "\\Logs";
-
+        
         public static string CreateLogFile(string logFileName)
         {
             // Create log directory if it doesn't exist
